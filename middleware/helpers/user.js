@@ -27,3 +27,5 @@ async function getUser(req) {
 
   return { status: 401, response: NOT_AUTHORIZED };
 }
+
+module.exports = { getUser, notAuthorizedMessage: NOT_AUTHORIZED };
